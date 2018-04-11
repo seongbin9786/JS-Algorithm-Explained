@@ -1,4 +1,4 @@
-const log = input => document.write('<div>' + input + '</div>');
+import { info } from '../0_common_util/logger.js';
 
 /*
   O(n)인 알고리즘.
@@ -22,6 +22,6 @@ const sel_sort = list => {
 }
 
 let list = [ 1, 3, 5, 9, 4, 2, 8, 6 ];
-log('선택 정렬 이전: ' + list);
+info('선택 정렬 이전: ' + list);
 sel_sort(list);
-log('선택 정렬 결과: ' + list);
+info('선택 정렬 결과: ' + list);
